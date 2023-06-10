@@ -18,7 +18,7 @@ export function Human(props: JSX.IntrinsicElements["group"]) {
         castShadow
         receiveShadow
       >
-        <meshStandardMaterial roughness={1} metalness={0} color={"#888"} />
+        <meshStandardMaterial roughness={1} metalness={0} color={"#aaa"} />
       </mesh>
     </group>
   );

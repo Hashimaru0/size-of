@@ -24,7 +24,12 @@ const Form = ({ setFormOpen, createObject }: FormProps) => {
             setFormOpen(false);
           }}
         >
-          <img src="icons/cross.svg" width={15} height={15} alt="cross" />
+          <img
+            src="src/assets/icons/cross.svg"
+            width={15}
+            height={15}
+            alt="cross"
+          />
         </button>
         <MaterialGroup />
         <DimensionsGroup />

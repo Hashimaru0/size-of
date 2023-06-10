@@ -1,5 +1,4 @@
-import { RoundedBox } from "@react-three/drei";
-import { FinalObject } from "../../../../public/types/components/types";
+import { FinalObject } from "../../../types/components/types";
 import { ComparisonObject } from "../../../types/data/types";
 
 type Props = {
@@ -12,14 +11,12 @@ type Props = {
 const Box = ({ finalObject, comparisonObject, size, position }: Props) => {
   return (
     <>
-      <RoundedBox
-        args={[size.x, size.y, size.z]}
+      <mesh
         position={[position.x, position.y, position.z]}
-        radius={size.x <= 0.2 || size.y <= 0.2 || size.z <= 0.2 ? 0 : 0.03}
-        smoothness={4}
         castShadow
         receiveShadow
       >
+        <boxGeometry args={[size.x, size.y, size.z]} />
         <meshStandardMaterial
           color={finalObject.material.color}
           metalness={
@@ -31,7 +28,7 @@ const Box = ({ finalObject, comparisonObject, size, position }: Props) => {
           transparent={true}
           opacity={finalObject.material.opacity}
         />
-      </RoundedBox>
+      </mesh>
     </>
   );
 };

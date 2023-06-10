@@ -1,5 +1,5 @@
 import { Sphere } from "@react-three/drei";
-import { FinalObject } from "../../../../public/types/components/types";
+import { FinalObject } from "../../../types/components/types";
 import { ComparisonObject } from "../../../types/data/types";
 
 type Props = {

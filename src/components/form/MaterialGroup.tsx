@@ -99,6 +99,19 @@ const SelectInput = ({ label, target, data }: SelectInputProps) => {
             color: "white",
             background: "#27292e",
             borderRadius: "0.5rem",
+            "::-webkit-scrollbar": {
+              width: "4px",
+              height: "0px",
+            },
+            "::-webkit-scrollbar-track": {
+              background: "#27292e",
+            },
+            "::-webkit-scrollbar-thumb": {
+              background: "#555",
+            },
+            "::-webkit-scrollbar-thumb:hover": {
+              background: "#444",
+            },
           }),
           option: (baseStyles) => ({
             ...baseStyles,

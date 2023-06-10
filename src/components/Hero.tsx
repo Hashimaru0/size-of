@@ -303,24 +303,27 @@ const Hero = () => {
           files={
             comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
               ? [
-                  "src/assets/hdrs/skyCubemap/px.jpg",
-                  "src/assets/hdrs/skyCubemap/nx.jpg",
-                  "src/assets/hdrs/skyCubemap/py.jpg",
-                  "src/assets/hdrs/skyCubemap/ny.jpg",
-                  "src/assets/hdrs/skyCubemap/pz.jpg",
-                  "src/assets/hdrs/skyCubemap/nz.jpg",
+                  "src/assets/cubemaps/sky/px.jpg",
+                  "src/assets/cubemaps/sky/nx.jpg",
+                  "src/assets/cubemaps/sky/py.jpg",
+                  "src/assets/cubemaps/sky/ny.jpg",
+                  "src/assets/cubemaps/sky/pz.jpg",
+                  "src/assets/cubemaps/sky/nz.jpg",
                 ]
               : [
-                  "src/assets/hdrs/skyCubemap/px.jpg",
-                  "src/assets/hdrs/skyCubemap/nx.jpg",
-                  "src/assets/hdrs/skyCubemap/py.jpg",
-                  "src/assets/hdrs/skyCubemap/ny.jpg",
-                  "src/assets/hdrs/skyCubemap/pz.jpg",
-                  "src/assets/hdrs/skyCubemap/nz.jpg",
+                  "src/assets/cubemaps/galaxy/px.jpg",
+                  "src/assets/cubemaps/galaxy/nx.jpg",
+                  "src/assets/cubemaps/galaxy/py.jpg",
+                  "src/assets/cubemaps/galaxy/ny.jpg",
+                  "src/assets/cubemaps/galaxy/pz.jpg",
+                  "src/assets/cubemaps/galaxy/nz.jpg",
                 ]
           }
-          blur={0}
-          background
+          background={
+            comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
+              ? false
+              : true
+          }
         />
         {comparisonObject.name !== "Earth" &&
         comparisonObject.name !== "Sun" ? (
