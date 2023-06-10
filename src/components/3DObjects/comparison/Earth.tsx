@@ -15,7 +15,7 @@ type GLTFResult = GLTF & {
 export function Earth(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
-    "3DModels/Earth.glb"
+    "src/assets/3DModels/Earth.glb"
   ) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 

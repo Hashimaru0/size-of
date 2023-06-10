@@ -1,0 +1,1212 @@
+[
+  {
+    "id": 1,
+    "name": "hydrogen",
+    "density": 8.988e-5,
+    "price": 1.39,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 2,
+    "name": "helium",
+    "density": 0.0001785,
+    "price": 24.0,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 3,
+    "name": "lithium",
+    "density": 0.534,
+    "price": 81.4,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 4,
+    "name": "beryllium",
+    "density": 1.85,
+    "price": 857.0,
+    "color": "#708090",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 5,
+    "name": "boron",
+    "density": 2.34,
+    "price": 3.68,
+    "color": "#222222",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 6,
+    "name": "carbon",
+    "density": 2.267,
+    "price": 0.122,
+    "color": "#222222",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 7,
+    "name": "nitrogen",
+    "density": 0.0012506,
+    "price": 0.14,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 8,
+    "name": "oxygen",
+    "density": 0.001429,
+    "price": 0.154,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 9,
+    "name": "fluorine",
+    "density": 0.001696,
+    "price": 1.84,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 10,
+    "name": "neon",
+    "density": 0.0008999,
+    "price": 240.0,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 11,
+    "name": "sodium",
+    "density": 0.971,
+    "price": 2.57,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 12,
+    "name": "magnesium",
+    "density": 1.738,
+    "price": 2.32,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 13,
+    "name": "aluminium",
+    "density": 2.698,
+    "price": 1.79,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 14,
+    "name": "silicon",
+    "density": 2.3296,
+    "price": 1.7,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 15,
+    "name": "phosphorus",
+    "density": 1.82,
+    "price": 2.69,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 16,
+    "name": "sulfur",
+    "density": 2.067,
+    "price": 0.0926,
+    "color": "#decf00",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 17,
+    "name": "chlorine",
+    "density": 0.003214,
+    "price": 0.082,
+    "color": "#decf00",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 18,
+    "name": "argon",
+    "density": 0.0017837,
+    "price": 0.931,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 19,
+    "name": "potassium",
+    "density": 0.862,
+    "price": 12.1,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 20,
+    "name": "calcium",
+    "density": 1.54,
+    "price": 2.21,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 21,
+    "name": "scandium",
+    "density": 2.989,
+    "price": 3460.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 22,
+    "name": "titanium",
+    "density": 4.54,
+    "price": 11.1,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 23,
+    "name": "vanadium",
+    "density": 6.11,
+    "price": 357.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 24,
+    "name": "chromium",
+    "density": 7.15,
+    "price": 9.4,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 25,
+    "name": "manganese",
+    "density": 7.44,
+    "price": 1.82,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 26,
+    "name": "iron",
+    "density": 7.874,
+    "price": 0.424,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 27,
+    "name": "cobalt",
+    "density": 8.86,
+    "price": 32.8,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 28,
+    "name": "nickel",
+    "density": 8.912,
+    "price": 13.9,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 29,
+    "name": "copper",
+    "density": 8.96,
+    "price": 6.0,
+    "color": "#b87333",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 30,
+    "name": "zinc",
+    "density": 7.134,
+    "price": 2.55,
+    "color": "#708090",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 31,
+    "name": "gallium",
+    "density": 5.907,
+    "price": 148.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 32,
+    "name": "germanium",
+    "density": 5.323,
+    "price": 914.0,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 33,
+    "name": "arsenic",
+    "density": 5.776,
+    "price": 0.999,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 34,
+    "name": "selenium",
+    "density": 4.809,
+    "price": 21.4,
+    "color": "#aaaaaa",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 35,
+    "name": "bromine",
+    "density": 3.122,
+    "price": 4.39,
+    "color": "#3e0000",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 36,
+    "name": "krypton",
+    "density": 0.003733,
+    "price": 290.0,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 37,
+    "name": "rubidium",
+    "density": 1.532,
+    "price": 15500.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 38,
+    "name": "strontium",
+    "density": 2.64,
+    "price": 6.53,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 39,
+    "name": "yttrium",
+    "density": 4.469,
+    "price": 31.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 40,
+    "name": "zirconium",
+    "density": 6.506,
+    "price": 35.7,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 41,
+    "name": "niobium",
+    "density": 8.57,
+    "price": 61.4,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 42,
+    "name": "molybdenum",
+    "density": 10.22,
+    "price": 40.1,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 43,
+    "name": "technetium",
+    "density": 11.5,
+    "price": 100000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 44,
+    "name": "ruthenium",
+    "density": 12.37,
+    "price": 10400.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 45,
+    "name": "rhodium",
+    "density": 12.41,
+    "price": 147000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 46,
+    "name": "palladium",
+    "density": 12.02,
+    "price": 49500.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 47,
+    "name": "silver",
+    "density": 10.501,
+    "price": 521.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 48,
+    "name": "cadmium",
+    "density": 8.69,
+    "price": 2.73,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 49,
+    "name": "indium",
+    "density": 7.31,
+    "price": 167.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 50,
+    "name": "tin",
+    "density": 7.287,
+    "price": 18.7,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 51,
+    "name": "antimony",
+    "density": 6.685,
+    "price": 5.79,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 52,
+    "name": "tellurium",
+    "density": 6.232,
+    "price": 63.5,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 53,
+    "name": "iodine",
+    "density": 4.93,
+    "price": 35.0,
+    "color": "#708090",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 54,
+    "name": "xenon",
+    "density": 0.005887,
+    "price": 1800.0,
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 55,
+    "name": "caesium",
+    "density": 1.873,
+    "price": 61800.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 56,
+    "name": "barium",
+    "density": 3.594,
+    "price": 0.246,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 57,
+    "name": "lanthanum",
+    "density": 6.145,
+    "price": 4.78,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 58,
+    "name": "cerium",
+    "density": 6.77,
+    "price": 4.57,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 59,
+    "name": "praseodymium",
+    "density": 6.773,
+    "price": 103.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 60,
+    "name": "neodymium",
+    "density": 7.007,
+    "price": 57.5,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 61,
+    "name": "promethium-147",
+    "density": 7.26,
+    "price": 460000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 62,
+    "name": "samarium",
+    "density": 7.52,
+    "price": 13.9,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 63,
+    "name": "europium",
+    "density": 5.243,
+    "price": 31.4,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 64,
+    "name": "gadolinium",
+    "density": 7.895,
+    "price": 28.6,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 65,
+    "name": "terbium",
+    "density": 8.229,
+    "price": 658.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 66,
+    "name": "dysprosium",
+    "density": 8.55,
+    "price": 307.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 67,
+    "name": "holmium",
+    "density": 8.795,
+    "price": 57.1,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 68,
+    "name": "erbium",
+    "density": 9.066,
+    "price": 26.4,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 69,
+    "name": "thulium",
+    "density": 9.321,
+    "price": 3000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 70,
+    "name": "ytterbium",
+    "density": 6.965,
+    "price": 17.1,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 71,
+    "name": "lutetium",
+    "density": 9.84,
+    "price": 643.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 72,
+    "name": "hafnium",
+    "density": 13.31,
+    "price": 900.0,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 73,
+    "name": "tantalum",
+    "density": 16.654,
+    "price": 298.0,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 74,
+    "name": "tungsten",
+    "density": 19.25,
+    "price": 35.3,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 75,
+    "name": "rhenium",
+    "density": 21.02,
+    "price": 3010.0,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 76,
+    "name": "osmium",
+    "density": 22.61,
+    "price": 12000.0,
+    "color": "#708090",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 77,
+    "name": "iridium",
+    "density": 22.56,
+    "price": 55500.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 78,
+    "name": "platinum",
+    "density": 21.46,
+    "price": 27800.0,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 79,
+    "name": "gold",
+    "density": 19.282,
+    "price": 63940.0,
+    "color": "#eda800",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 80,
+    "name": "mercury",
+    "density": 13.5336,
+    "price": 30.2,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 81,
+    "name": "thallium",
+    "density": 11.85,
+    "price": 4200.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 82,
+    "name": "lead",
+    "density": 11.342,
+    "price": 2.0,
+    "color": "#708090",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 83,
+    "name": "bismuth",
+    "density": 9.807,
+    "price": 6.36,
+    "color": "#aaaaaa",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 84,
+    "name": "polonium-209",
+    "density": 9.32,
+    "price": 49.2,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 85,
+    "name": "astatine",
+    "density": 7.0,
+    "price": "???",
+    "color": "#eeeeee",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 86,
+    "name": "radon",
+    "density": 0.00973,
+    "price": "???",
+    "color": "#cccccc",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 0.4
+  },
+  {
+    "id": 87,
+    "name": "francium",
+    "density": 1.87,
+    "price": "???",
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 88,
+    "name": "radium",
+    "density": 5.5,
+    "price": "???",
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 89,
+    "name": "actinium-225",
+    "density": 10.07,
+    "price": 29.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 90,
+    "name": "thorium",
+    "density": 11.72,
+    "price": 287.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 91,
+    "name": "protactinium",
+    "density": 15.37,
+    "price": "???",
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 92,
+    "name": "uranium",
+    "density": 18.95,
+    "price": 101.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 93,
+    "name": "neptunium",
+    "density": 20.45,
+    "price": 660000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 94,
+    "name": "plutonium-239",
+    "density": 19.84,
+    "price": 6490000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 95,
+    "name": "americium-241",
+    "density": 13.69,
+    "price": 728000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 96,
+    "name": "curium-244",
+    "density": 13.51,
+    "price": 185000000.0,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 97,
+    "name": "berkelium-249",
+    "density": 14.79,
+    "price": 185.0,
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 98,
+    "name": "californium-249",
+    "density": 15.1,
+    "price": 185.0,
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 99,
+    "name": "einsteinium",
+    "density": 8.84,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 100,
+    "name": "fermium",
+    "density": 9.7,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 101,
+    "name": "mendelevium",
+    "density": 10.3,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 102,
+    "name": "nobelium",
+    "density": 9.9,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 103,
+    "name": "lawrencium",
+    "density": 15.6,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 104,
+    "name": "rutherfordium",
+    "density": 23.2,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 105,
+    "name": "dubnium",
+    "density": 29.3,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 106,
+    "name": "seaborgium",
+    "density": 35.0,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 107,
+    "name": "bohrium",
+    "density": 37.1,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 108,
+    "name": "hassium",
+    "density": 40.7,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 109,
+    "name": "meitnerium",
+    "density": 37.4,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 110,
+    "name": "darmstadtium",
+    "density": 34.8,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 111,
+    "name": "roentgenium",
+    "density": 28.7,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 112,
+    "name": "copernicium",
+    "density": 14.0,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 113,
+    "name": "nihonium",
+    "density": 16.0,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 114,
+    "name": "flerovium",
+    "density": 9.928,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 115,
+    "name": "moscovium",
+    "density": 13.5,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 116,
+    "name": "livermorium",
+    "density": 12.9,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 117,
+    "name": "tennessine",
+    "density": 7.2,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 118,
+    "name": "oganesson",
+    "density": 7.0,
+    "price": "???",
+    "color": "#ffffff",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  },
+  {
+    "id": 119,
+    "name": "water",
+    "density": 1,
+    "price": "???",
+    "color": "#0e87cc",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 0.4
+  },
+  {
+    "id": 120,
+    "name": "steel",
+    "density": 7.85,
+    "price": 1.4,
+    "color": "#eeeeee",
+    "metalness": 1,
+    "roughness": 0.1,
+    "opacity": 1
+  },
+  {
+    "id": 121,
+    "name": "coffee",
+    "density": 1.5,
+    "price": "???",
+    "color": "#473224",
+    "metalness": 0,
+    "roughness": 1,
+    "opacity": 1
+  }
+]

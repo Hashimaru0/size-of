@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "picometer",
+    "shorthand": "pm",
+    "toBase": 1e-12
+  },
+  {
+    "id": 1,
+    "name": "nanometer",
+    "shorthand": "nm",
+    "toBase": 1e-9
+  },
+  {
+    "id": 2,
+    "name": "micrometer",
+    "shorthand": "µm",
+    "toBase": 1e-6
+  },
+  {
+    "id": 3,
+    "name": "millimeter",
+    "shorthand": "mm",
+    "toBase": 1e-3
+  },
+  {
+    "id": 4,
+    "name": "centimeter",
+    "shorthand": "cm",
+    "toBase": 1e-2
+  },
+  {
+    "id": 5,
+    "name": "meter",
+    "shorthand": "m",
+    "toBase": 1
+  },
+  {
+    "id": 6,
+    "name": "kilometer",
+    "shorthand": "km",
+    "toBase": 1e3
+  },
+  {
+    "id": 7,
+    "name": "inch",
+    "shorthand": "in",
+    "toBase": 2.54e-2
+  },
+  {
+    "id": 8,
+    "name": "foot",
+    "shorthand": "ft",
+    "toBase": 3.048e-1
+  },
+  {
+    "id": 9,
+    "name": "yard",
+    "shorthand": "yd",
+    "toBase": 9.144e-1
+  },
+  {
+    "id": 10,
+    "name": "mile",
+    "shorthand": "mi",
+    "toBase": 1.609344e3
+  },
+  {
+    "id": 11,
+    "name": "lunar distance",
+    "shorthand": "LD",
+    "toBase": 3.844e8
+  }
+]

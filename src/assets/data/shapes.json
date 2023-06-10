@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "name": "cube"
+  },
+  {
+    "id": 1,
+    "name": "box"
+  },
+  {
+    "id": 2,
+    "name": "sphere"
+  },
+  {
+    "id": 3,
+    "name": "cylinder"
+  }
+]

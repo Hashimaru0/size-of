@@ -9,7 +9,7 @@ type GLTFResult = GLTF & {
 };
 
 export function Hand(props: JSX.IntrinsicElements["group"]) {
-  const { nodes } = useGLTF("3DModels/Hand.glb") as GLTFResult;
+  const { nodes } = useGLTF("src/assets/3DModels/Hand.glb") as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <mesh

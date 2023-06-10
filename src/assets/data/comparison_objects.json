@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0,
+    "name": "DNA",
+    "description": "3.4 nanometers tall",
+    "size": 3.4e-9,
+    "unitSize": 3.4e-10,
+    "frontDistance": 1.2,
+    "backDistance": 1.2,
+    "cutoff": 2e-8
+  },
+  {
+    "id": 1,
+    "name": "Bacteriophage",
+    "description": "200 nanometers",
+    "size": 2e-7,
+    "unitSize": 2e-8,
+    "frontDistance": 5,
+    "backDistance": 5,
+    "cutoff": 1e-6
+  },
+  {
+    "id": 2,
+    "name": "Red Blood Cell",
+    "description": "8 micrometers",
+    "size": 8e-6,
+    "unitSize": 8e-7,
+    "frontDistance": 5.5,
+    "backDistance": 5.5,
+    "cutoff": 2e-5
+  },
+  {
+    "id": 3,
+    "name": "Hair",
+    "description": "75 micrometers thick",
+    "size": 7.5e-5,
+    "unitSize": 7.5e-6,
+    "frontDistance": 5,
+    "backDistance": 5,
+    "cutoff": 2.5e-3
+  },
+  {
+    "id": 4,
+    "name": "Hand",
+    "description": "20 cm / 7.8 in long",
+    "size": 2.5e-1,
+    "unitSize": 2.5e-2,
+    "frontDistance": 3,
+    "backDistance": 3,
+    "cutoff": 5e-1
+  },
+  {
+    "id": 5,
+    "name": "Human",
+    "description": "1.75 m / 5 ft 9 in tall",
+    "size": 1.75,
+    "unitSize": 1.75e-1,
+    "frontDistance": 1.2,
+    "backDistance": 1.2,
+    "cutoff": 4e1
+  },
+  {
+    "id": 6,
+    "name": "Burj Khalifa",
+    "description": "830 m / 2,723 ft tall",
+    "size": 8.3e2,
+    "unitSize": 8.3e1,
+    "frontDistance": 1.2,
+    "backDistance": 1.2,
+    "cutoff": 1e4
+  },
+  {
+    "id": 7,
+    "name": "Mount Fuji",
+    "description": "3,776 m / 12,389 ft tall",
+    "size": 3.776e3,
+    "unitSize": 3.776e2,
+    "frontDistance": 30,
+    "backDistance": 30,
+    "cutoff": 1e5
+  },
+  {
+    "id": 8,
+    "name": "Earth",
+    "description": "12,742 km / 7,917 mi",
+    "size": 1.2742e7,
+    "unitSize": 1.2742e6,
+    "frontDistance": 5.1,
+    "backDistance": 5.1,
+    "cutoff": 1.2742e8
+  },
+  {
+    "id": 9,
+    "name": "Sun",
+    "description": "1,392,680 km / 865,371 mi",
+    "size": 1.3927e9,
+    "unitSize": 1.3927e8,
+    "frontDistance": 5.1,
+    "backDistance": 5.1,
+    "cutoff": 3e10
+  }
+]

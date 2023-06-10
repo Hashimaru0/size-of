@@ -12,7 +12,9 @@ type GLTFResult = GLTF & {
 };
 
 export function MountFuji(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("3DModels/MountFuji.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(
+    "src/assets/3DModels/MountFuji.glb"
+  ) as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <group

@@ -73,7 +73,7 @@ type GLTFResult = GLTF & {
 
 export function Bacteriophage(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "3DModels/Bacteriophage.glb"
+    "src/assets/3DModels/Bacteriophage.glb"
   ) as GLTFResult;
   return (
     <group {...props} dispose={null}>

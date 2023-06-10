@@ -21,7 +21,7 @@ type GLTFResult = GLTF & {
 
 export function BurjKhalifa(props: JSX.IntrinsicElements["group"]) {
   const { nodes, materials } = useGLTF(
-    "3DModels/BurjKhalifa.glb"
+    "src/assets/3DModels/BurjKhalifa.glb"
   ) as GLTFResult;
   return (
     <group {...props} dispose={null}>

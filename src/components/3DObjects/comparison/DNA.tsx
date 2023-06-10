@@ -16,7 +16,7 @@ type GLTFResult = GLTF & {
 export function DNA(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
-    "3DModels/DNA.glb"
+    "src/assets/3DModels/DNA.glb"
   ) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 

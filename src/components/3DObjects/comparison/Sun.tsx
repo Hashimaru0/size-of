@@ -15,7 +15,7 @@ type GLTFResult = GLTF & {
 export function Sun(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
-    "3DModels/Sun.glb"
+    "src/assets/3DModels/Sun.glb"
   ) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 

@@ -12,7 +12,9 @@ type GLTFResult = GLTF & {
 };
 
 export function Hair(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF("3DModels/Hair.glb") as GLTFResult;
+  const { nodes, materials } = useGLTF(
+    "src/assets/3DModels/Hair.glb"
+  ) as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <mesh

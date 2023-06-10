@@ -1,0 +1,80 @@
+[
+  {
+    "id": 0,
+    "name": "picogram",
+    "shorthand": "pg",
+    "toBase": 1e-15
+  },
+  {
+    "id": 1,
+    "name": "nanogram",
+    "shorthand": "ng",
+    "toBase": 1e-12
+  },
+  {
+    "id": 2,
+    "name": "microgram",
+    "shorthand": "µg",
+    "toBase": 1e-9
+  },
+  {
+    "id": 3,
+    "name": "miligram",
+    "shorthand": "mg",
+    "toBase": 1e-6
+  },
+  {
+    "id": 4,
+    "name": "gram",
+    "shorthand": "g",
+    "toBase": 1e-3
+  },
+  {
+    "id": 5,
+    "name": "kilogram",
+    "shorthand": "kg",
+    "toBase": 1
+  },
+  {
+    "id": 6,
+    "name": "metric ton",
+    "shorthand": "t",
+    "toBase": 1e3
+  },
+  {
+    "id": 7,
+    "name": "ounce",
+    "shorthand": "oz",
+    "toBase": 2.83495e-2
+  },
+  {
+    "id": 8,
+    "name": "pound",
+    "shorthand": "lbs",
+    "toBase": 4.53592e-1
+  },
+  {
+    "id": 9,
+    "name": "stone",
+    "shorthand": "st",
+    "toBase": 6.35029
+  },
+  {
+    "id": 10,
+    "name": "Earth mass",
+    "shorthand": "ME",
+    "toBase": 5.972e24
+  },
+  {
+    "id": 11,
+    "name": "Jupiter mass",
+    "shorthand": "MJ",
+    "toBase": 1.899e27
+  },
+  {
+    "id": 12,
+    "name": "Solar mass",
+    "shorthand": "M☉",
+    "toBase": 1.989e30
+  }
+]
