@@ -27,6 +27,7 @@ import {
 // Types
 import { ComparisonObject } from "../types/data/types";
 import { FinalObject, Context } from "../types/components/types";
+import LevaUI from "./LevaUI";
 
 export const FormDataContext = createContext<Context>({
   formObject: {
@@ -286,6 +287,7 @@ const Hero = () => {
         resetCam={resetCam}
         pickRandomObject={pickRandomObject}
       />
+      <LevaUI setFinalObject={setFinalObject} />
       <FormDataContext.Provider
         value={{
           formObject,

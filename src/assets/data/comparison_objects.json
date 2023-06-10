@@ -97,6 +97,6 @@
     "unitSize": 1.3927e8,
     "frontDistance": 5.1,
     "backDistance": 5.1,
-    "cutoff": 3e10
+    "cutoff": 1e11
   }
 ]

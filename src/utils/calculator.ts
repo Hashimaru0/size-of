@@ -1,6 +1,8 @@
 /* eslint-disable prefer-const */
 import { FormObject } from "../types/components/types";
 
+export let MIN_LENGTH = 1e-10;
+export let MAX_LENGTH = 2e10;
 let DENSITY_NORMAL = 1;
 let MULTIPLIERS = [
   "million",
@@ -390,8 +392,8 @@ export const isInRangeLength = (
   toDoubleSize: boolean
 ): boolean => {
   if (
-    valueToNum(num) * toBase * (toDoubleSize ? 2 : 1) > 1e-11 &&
-    valueToNum(num) * toBase * (toDoubleSize ? 2 : 1) < 2e10
+    valueToNum(num) * toBase * (toDoubleSize ? 2 : 1) > MIN_LENGTH &&
+    valueToNum(num) * toBase * (toDoubleSize ? 2 : 1) < MAX_LENGTH
   ) {
     return true;
   } else return false;
