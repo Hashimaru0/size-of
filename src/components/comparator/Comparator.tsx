@@ -96,11 +96,7 @@ const Comparator = ({ finalObject, comparisonObject }: ComparatorProps) => {
 
     let heightCutoff = 5;
 
-    if (
-      comparisonObject.name === "Hair" ||
-      comparisonObject.name === "Earth" ||
-      comparisonObject.name === "Sun"
-    ) {
+    if (comparisonObject.name === "Earth" || comparisonObject.name === "Sun") {
       heightCutoff = 8;
     }
 

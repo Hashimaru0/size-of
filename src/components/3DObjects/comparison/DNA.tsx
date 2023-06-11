@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import DNAObj from "../../../assets/3DModels/DNA.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -15,9 +16,7 @@ type GLTFResult = GLTF & {
 // eslint-disable-next-line react-refresh/only-export-components
 export function DNA(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
-  const { nodes, materials, animations } = useGLTF(
-    "src/assets/3DModels/DNA.glb"
-  ) as GLTFResult;
+  const { nodes, materials, animations } = useGLTF(DNAObj) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {

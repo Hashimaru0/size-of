@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import humanObj from "../../../assets/3DModels/Human.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -9,7 +10,7 @@ type GLTFResult = GLTF & {
 };
 
 export function Human(props: JSX.IntrinsicElements["group"]) {
-  const { nodes } = useGLTF("src/assets/3DModels/Human.glb") as GLTFResult;
+  const { nodes } = useGLTF(humanObj) as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <mesh

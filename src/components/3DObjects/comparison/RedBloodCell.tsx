@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import redBloodCellObj from "../../../assets/3DModels/RedBloodCell.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -15,7 +16,7 @@ type GLTFResult = GLTF & {
 export function RedBloodCell(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
-    "src/assets/3DModels/RedBloodCell.glb"
+    redBloodCellObj
   ) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 

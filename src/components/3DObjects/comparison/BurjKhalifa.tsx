@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import burjKhalifaObj from "../../../assets/3DModels/BurjKhalifa.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -20,9 +21,7 @@ type GLTFResult = GLTF & {
 };
 
 export function BurjKhalifa(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF(
-    "src/assets/3DModels/BurjKhalifa.glb"
-  ) as GLTFResult;
+  const { nodes, materials } = useGLTF(burjKhalifaObj) as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <mesh

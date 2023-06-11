@@ -3,6 +3,7 @@ import { FormObject } from "../types/components/types";
 
 export let MIN_LENGTH = 1e-10;
 export let MAX_LENGTH = 2e10;
+
 let DENSITY_NORMAL = 1;
 let MULTIPLIERS = [
   "million",

@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import EarthObj from "../../../assets/3DModels/Earth.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -14,9 +15,7 @@ type GLTFResult = GLTF & {
 
 export function Earth(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
-  const { nodes, materials, animations } = useGLTF(
-    "src/assets/3DModels/Earth.glb"
-  ) as GLTFResult;
+  const { nodes, materials, animations } = useGLTF(EarthObj) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {

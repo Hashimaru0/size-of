@@ -17,7 +17,7 @@ const Controls = ({ target }: { target: [number, number, number] }) => {
     <OrbitControls
       ref={ref}
       dampingFactor={0.2}
-      maxDistance={350}
+      maxDistance={600}
       minDistance={1}
       target={target}
     />

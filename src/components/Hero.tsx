@@ -28,6 +28,20 @@ import {
 import { ComparisonObject } from "../types/data/types";
 import { FinalObject, Context } from "../types/components/types";
 import LevaUI from "./LevaUI";
+// Assets
+import skyNX from "../assets/cubemaps/sky/nx.jpg";
+import skyNY from "../assets/cubemaps/sky/ny.jpg";
+import skyNZ from "../assets/cubemaps/sky/nz.jpg";
+import skyPX from "../assets/cubemaps/sky/px.jpg";
+import skyPY from "../assets/cubemaps/sky/py.jpg";
+import skyPZ from "../assets/cubemaps/sky/pz.jpg";
+
+import galaxyNX from "../assets/cubemaps/galaxy/nx.jpg";
+import galaxyNY from "../assets/cubemaps/galaxy/ny.jpg";
+import galaxyNZ from "../assets/cubemaps/galaxy/nz.jpg";
+import galaxyPX from "../assets/cubemaps/galaxy/px.jpg";
+import galaxyPY from "../assets/cubemaps/galaxy/py.jpg";
+import galaxyPZ from "../assets/cubemaps/galaxy/pz.jpg";
 
 export const FormDataContext = createContext<Context>({
   formObject: {
@@ -304,22 +318,8 @@ const Hero = () => {
         <Environment
           files={
             comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
-              ? [
-                  "src/assets/cubemaps/sky/px.jpg",
-                  "src/assets/cubemaps/sky/nx.jpg",
-                  "src/assets/cubemaps/sky/py.jpg",
-                  "src/assets/cubemaps/sky/ny.jpg",
-                  "src/assets/cubemaps/sky/pz.jpg",
-                  "src/assets/cubemaps/sky/nz.jpg",
-                ]
-              : [
-                  "src/assets/cubemaps/galaxy/px.jpg",
-                  "src/assets/cubemaps/galaxy/nx.jpg",
-                  "src/assets/cubemaps/galaxy/py.jpg",
-                  "src/assets/cubemaps/galaxy/ny.jpg",
-                  "src/assets/cubemaps/galaxy/pz.jpg",
-                  "src/assets/cubemaps/galaxy/nz.jpg",
-                ]
+              ? [skyPX, skyNX, skyPY, skyNY, skyPZ, skyNZ]
+              : [galaxyPX, galaxyNX, galaxyPY, galaxyNY, galaxyPZ, galaxyNZ]
           }
           background={
             comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"

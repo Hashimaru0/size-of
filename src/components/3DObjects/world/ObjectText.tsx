@@ -19,6 +19,9 @@ const ObjectText = ({ comparisonObject, shapePosition }: Props) => {
     } else if (comparisonObject.name === "Mount Fuji") {
       setY(14);
       setZ(0);
+    } else if (comparisonObject.name === "Hair") {
+      setY(7);
+      setZ(0);
     } else {
       comparisonObject.name === "Red Blood Cell" ? setY(13) : setY(12);
       setZ(0);

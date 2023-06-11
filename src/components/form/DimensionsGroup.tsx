@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { FormDataContext } from "../Hero";
 import Select from "react-select";
+import { MIN_LENGTH, MAX_LENGTH } from "../../utils/calculator";
 // Data
 import lengthUnits from "../../assets/data/length_units.json";
 import massUnits from "../../assets/data/mass_units.json";
@@ -174,24 +175,24 @@ const DimensionInput = ({
       if (label !== "Mass:" && label !== "Value:") {
         if (label === "Radius:") {
           if (
-            valueToNum(dimensionObj.value) * dimensionObj.unit.toBase <=
-            0.5e-11
+            valueToNum(dimensionObj.value) * dimensionObj.unit.toBase * 2 <=
+            MIN_LENGTH
           ) {
             return "Too small!";
           } else if (
-            valueToNum(dimensionObj.value) * dimensionObj.unit.toBase >=
-            1e10
+            valueToNum(dimensionObj.value) * dimensionObj.unit.toBase * 2 >=
+            MAX_LENGTH
           ) {
             return "Too big!";
           }
         } else if (
           valueToNum(dimensionObj.value) * dimensionObj.unit.toBase <=
-          1e-11
+          MIN_LENGTH
         ) {
           return "Too small!";
         } else if (
           valueToNum(dimensionObj.value) * dimensionObj.unit.toBase >=
-          2e10
+          MAX_LENGTH
         ) {
           return "Too big!";
         }

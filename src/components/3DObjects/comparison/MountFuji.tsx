@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import mountFujiObj from "../../../assets/3DModels/MountFuji.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -12,22 +13,16 @@ type GLTFResult = GLTF & {
 };
 
 export function MountFuji(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF(
-    "src/assets/3DModels/MountFuji.glb"
-  ) as GLTFResult;
+  const { nodes, materials } = useGLTF(mountFujiObj) as GLTFResult;
   return (
     <group {...props} dispose={null}>
-      <group
-        position={[0, -14.25, 0]}
+      <mesh
+        geometry={nodes.Object_2.geometry}
+        material={materials["rastMat.003"]}
+        position={[0, -9.46, 0]}
         rotation={[-Math.PI / 2, 0, Math.PI / 2]}
-        scale={0.006}
-      >
-        <mesh
-          geometry={nodes.Object_2.geometry}
-          material={materials["rastMat.003"]}
-          scale={1.098}
-        />
-      </group>
+        scale={0.005}
+      />
     </group>
   );
 }

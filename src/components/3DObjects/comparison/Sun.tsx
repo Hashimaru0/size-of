@@ -2,6 +2,7 @@ import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import sunObj from "../../../assets/3DModels/Sun.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -14,9 +15,7 @@ type GLTFResult = GLTF & {
 
 export function Sun(props: JSX.IntrinsicElements["group"]) {
   const group = useRef<THREE.Group>(null);
-  const { nodes, materials, animations } = useGLTF(
-    "src/assets/3DModels/Sun.glb"
-  ) as GLTFResult;
+  const { nodes, materials, animations } = useGLTF(sunObj) as GLTFResult;
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {

@@ -33,10 +33,10 @@
     "id": 3,
     "name": "Hair",
     "description": "75 micrometers thick",
-    "size": 7.5e-5,
-    "unitSize": 7.5e-6,
-    "frontDistance": 5,
-    "backDistance": 5,
+    "size": 1.5e-4,
+    "unitSize": 1.5e-5,
+    "frontDistance": 3,
+    "backDistance": 3,
     "cutoff": 2.5e-3
   },
   {
@@ -76,7 +76,7 @@
     "size": 3.776e3,
     "unitSize": 3.776e2,
     "frontDistance": 30,
-    "backDistance": 30,
+    "backDistance": 23,
     "cutoff": 1e5
   },
   {

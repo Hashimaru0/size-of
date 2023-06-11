@@ -1,6 +1,7 @@
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import bacteriophageObj from "../../../assets/3DModels/Bacteriophage.glb";
 
 type GLTFResult = GLTF & {
   nodes: {
@@ -72,9 +73,7 @@ type GLTFResult = GLTF & {
 };
 
 export function Bacteriophage(props: JSX.IntrinsicElements["group"]) {
-  const { nodes, materials } = useGLTF(
-    "src/assets/3DModels/Bacteriophage.glb"
-  ) as GLTFResult;
+  const { nodes, materials } = useGLTF(bacteriophageObj) as GLTFResult;
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.434}>

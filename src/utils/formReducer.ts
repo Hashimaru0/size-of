@@ -27,7 +27,7 @@ export const TARGET = {
   RESET: "reset",
 };
 
-const validCheck = (formObject: FormObject): boolean => {
+const formValidCheck = (formObject: FormObject): boolean => {
   let isValid = false;
 
   if (
@@ -152,7 +152,7 @@ const updateForm = (formObject: FormObject, action: Action): FormObject => {
       if (newDensity) {
         formObject.density = {
           ...newDensity,
-          valid: isInRangeFinite(newDensity.value),
+          valid: isValidNumber(newDensity.value),
         };
       }
 
@@ -163,7 +163,7 @@ const updateForm = (formObject: FormObject, action: Action): FormObject => {
       if (newPrice) {
         formObject.price = {
           ...newPrice,
-          valid: newPrice.value === "???" || isInRangeFinite(newPrice.value),
+          valid: newPrice.value === "???" || isValidNumber(newPrice.value),
         };
 
         if (formObject.price.value === "???") {
@@ -410,7 +410,7 @@ export const reducer = (formObject: FormObject, action: Action): FormObject => {
   if (updatedForm.density.valid && updatedForm.price.valid)
     updatedForm = calculateLocked(updatedForm);
 
-  updatedForm.valid = validCheck(formObject);
+  updatedForm.valid = formValidCheck(formObject);
 
   return updatedForm;
 };

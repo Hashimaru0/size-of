@@ -17,7 +17,7 @@ const SphereShape = ({
 }: Props) => {
   return (
     <Sphere
-      args={[size.x, 32, 16]}
+      args={[size.x, 32, 32]}
       position={[position.x, position.y, position.z]}
       castShadow
       receiveShadow
