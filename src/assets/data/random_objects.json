@@ -32,5 +32,429 @@
       "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
     },
     "description": "Daily coffee consumption by an average zoomer."
+  },
+  {
+    "material": {
+      "id": 119,
+      "name": "water",
+      "density": 1,
+      "price": "???",
+      "color": "#0e87cc",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 0.4
+    },
+    "shape": "cube",
+    "x": {
+      "value": 0.1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 1,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 0,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Kilogram of water."
+  },
+  {
+    "material": {
+      "id": 123,
+      "name": "uranium-235",
+      "density": 19.1,
+      "price": "???",
+      "color": "#eeeeee",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 1
+    },
+    "shape": "cube",
+    "x": {
+      "value": 0.15,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 64,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 0,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Amount of highly enriched Uranium used in 'Little Boy' nuclear bomb dropped on Hiroshima in 1945."
+  },
+  {
+    "material": {
+      "id": 79,
+      "name": "gold",
+      "density": 19.282,
+      "price": 63940,
+      "color": "#eda800",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 1
+    },
+    "shape": "cube",
+    "x": {
+      "value": 5.45,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 3130000,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 200000000000,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Elon Musk's net worth in gold. ($200 billion)"
+  },
+  {
+    "material": {
+      "id": 6,
+      "name": "carbon",
+      "density": 2.267,
+      "price": 0.122,
+      "color": "#222222",
+      "metalness": 0,
+      "roughness": 1,
+      "opacity": 1
+    },
+    "shape": "sphere",
+    "x": {
+      "value": 1.75,
+      "unit": {
+        "id": 4,
+        "name": "centimeter",
+        "shorthand": "cm",
+        "toBase": 0.01
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 0.05,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 0.00621,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Size Earth would need to be compressed to in order to become a black hole."
+  },
+  {
+    "material": {
+      "id": 124,
+      "name": "rock",
+      "density": 2.65,
+      "price": 0.00788,
+      "color": "#444",
+      "metalness": 0,
+      "roughness": 1,
+      "opacity": 1
+    },
+    "shape": "sphere",
+    "x": {
+      "value": 5,
+      "unit": {
+        "id": 6,
+        "name": "kilometer",
+        "shorthand": "km",
+        "toBase": 1000
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 1390000000000000,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 10930000000000,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Approximate size of the asteroid that killed the dinosaurs."
+  },
+  {
+    "material": {
+      "id": 122,
+      "name": "salt",
+      "density": 1.378,
+      "price": 2,
+      "color": "#aaa",
+      "metalness": 0,
+      "roughness": 1,
+      "opacity": 1
+    },
+    "shape": "cube",
+    "x": {
+      "value": 34.43,
+      "unit": {
+        "id": 3,
+        "name": "millimeter",
+        "shorthand": "mm",
+        "toBase": 0.001
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 56.25,
+      "unit": { "id": 4, "name": "gram", "shorthand": "g", "toBase": 0.001 }
+    },
+    "value": {
+      "value": 0.11,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Lethal dose of salt."
+  },
+  {
+    "material": {
+      "id": 26,
+      "name": "iron",
+      "density": 7.874,
+      "price": 0.424,
+      "color": "#aaaaaa",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 1
+    },
+    "shape": "sphere",
+    "x": {
+      "value": 4.84,
+      "unit": {
+        "id": 3,
+        "name": "millimeter",
+        "shorthand": "mm",
+        "toBase": 0.001
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 3.75,
+      "unit": { "id": 4, "name": "gram", "shorthand": "g", "toBase": 0.001 }
+    },
+    "value": {
+      "value": 0.00159,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Amount of iron inside the human body."
+  },
+  {
+    "material": {
+      "id": 119,
+      "name": "water",
+      "density": 1,
+      "price": "???",
+      "color": "#0e87cc",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 0.6
+    },
+    "shape": "sphere",
+    "x": {
+      "value": 1114.367,
+      "unit": {
+        "id": 6,
+        "name": "kilometer",
+        "shorthand": "km",
+        "toBase": 1000
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 5.8e21,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 0,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Water from all the oceans and rivers in the world."
+  },
+  {
+    "material": {
+      "id": 79,
+      "name": "gold",
+      "density": 19.282,
+      "price": 63940,
+      "color": "#eda800",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 1
+    },
+    "shape": "box",
+    "x": {
+      "value": 9.01,
+      "unit": {
+        "id": 4,
+        "name": "centimeter",
+        "shorthand": "cm",
+        "toBase": 0.01
+      }
+    },
+    "y": {
+      "value": 0.1,
+      "unit": {
+        "id": 2,
+        "name": "micrometer",
+        "shorthand": "µm",
+        "toBase": 0.000001
+      }
+    },
+    "z": {
+      "value": 9,
+      "unit": {
+        "id": 4,
+        "name": "centimeter",
+        "shorthand": "cm",
+        "toBase": 0.01
+      }
+    },
+    "mass": {
+      "value": 0.0000156,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 1,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Sheet of gold 0.1 microns thick, worth $1."
+  },
+  {
+    "material": {
+      "id": 122,
+      "name": "salt",
+      "density": 1.378,
+      "price": 2,
+      "color": "#aaa",
+      "metalness": 0,
+      "roughness": 1,
+      "opacity": 1
+    },
+    "shape": "box",
+    "x": {
+      "value": 29933.798,
+      "unit": {
+        "id": 6,
+        "name": "kilometer",
+        "shorthand": "km",
+        "toBase": 1000
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 41250000000,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 82500000000,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "Distance light travels in 0.1 seconds."
+  },
+  {
+    "material": {
+      "id": 14,
+      "name": "silicon",
+      "density": 2.3296,
+      "price": 1.7,
+      "color": "#aaaaaa",
+      "metalness": 1,
+      "roughness": 0.1,
+      "opacity": 1
+    },
+    "shape": "cube",
+    "x": {
+      "value": 7,
+      "unit": {
+        "id": 1,
+        "name": "nanometer",
+        "shorthand": "nm",
+        "toBase": 1e-9
+      }
+    },
+    "y": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "z": {
+      "value": 1,
+      "unit": { "id": 5, "name": "meter", "shorthand": "m", "toBase": 1 }
+    },
+    "mass": {
+      "value": 7.99e-22,
+      "unit": { "id": 5, "name": "kilogram", "shorthand": "kg", "toBase": 1 }
+    },
+    "value": {
+      "value": 1.36e-21,
+      "unit": { "id": 0, "name": "dollar", "shorthand": "$", "toBase": 1 }
+    },
+    "description": "The size of a modern transistor."
   }
 ]

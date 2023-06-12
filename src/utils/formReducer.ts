@@ -6,10 +6,11 @@ import {
   isInRangeFinite,
   isInRangeLength,
   isValidNumber,
-  DEFAULT_FORM,
 } from "./calculator";
 // Data
 import lengthUnits from "../assets/data/length_units.json";
+import massUnits from "../assets/data/mass_units.json";
+import currencyUnits from "../assets/data/currency_units.json";
 // Types
 import { FormObject, Action } from "../types/components/types";
 
@@ -342,7 +343,61 @@ const updateForm = (formObject: FormObject, action: Action): FormObject => {
       }
       return { ...formObject };
     case TARGET.RESET:
-      formObject = DEFAULT_FORM;
+      formObject = {
+        material: {
+          id: 0,
+          name: "",
+          density: 1,
+          price: 1,
+          color: "#a020f0",
+          metalness: 1,
+          roughness: 0.1,
+          opacity: 1,
+        },
+        shape: {
+          id: 0,
+          name: "cube",
+        },
+        density: {
+          value: "1",
+          valid: true,
+        },
+        price: {
+          value: "1",
+          valid: true,
+        },
+        x: {
+          value: "1",
+          valid: true,
+          unit: lengthUnits[5],
+          locked: false,
+        },
+        y: {
+          value: "1",
+          valid: true,
+          unit: lengthUnits[5],
+          locked: false,
+        },
+        z: {
+          value: "1",
+          valid: true,
+          unit: lengthUnits[5],
+          locked: false,
+        },
+        mass: {
+          value: "1",
+          valid: true,
+          unit: massUnits[5],
+          locked: true,
+        },
+        value: {
+          value: "1",
+          valid: true,
+          unit: currencyUnits[0],
+          locked: true,
+        },
+        valid: true,
+      };
       return { ...formObject };
     default:
       return { ...formObject };

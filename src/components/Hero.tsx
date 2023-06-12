@@ -23,7 +23,6 @@ import {
   capitalizeFirstLetter,
   formatNumber,
   valueToNum,
-  DEFAULT_FORM,
 } from "../utils/calculator";
 // Types
 import { ComparisonObject } from "../types/data/types";
@@ -106,7 +105,61 @@ export const FormDataContext = createContext<Context>({
 
 const Hero = () => {
   const [formOpen, setFormOpen] = useState<boolean>(false);
-  const [formObject, dispatch] = useReducer(reducer, DEFAULT_FORM);
+  const [formObject, dispatch] = useReducer(reducer, {
+    material: {
+      id: 0,
+      name: "",
+      density: 1,
+      price: 1,
+      color: "#a020f0",
+      metalness: 1,
+      roughness: 0.1,
+      opacity: 1,
+    },
+    shape: {
+      id: 0,
+      name: "cube",
+    },
+    density: {
+      value: "1",
+      valid: true,
+    },
+    price: {
+      value: "1",
+      valid: true,
+    },
+    x: {
+      value: "1",
+      valid: true,
+      unit: lengthUnits[5],
+      locked: false,
+    },
+    y: {
+      value: "1",
+      valid: true,
+      unit: lengthUnits[5],
+      locked: false,
+    },
+    z: {
+      value: "1",
+      valid: true,
+      unit: lengthUnits[5],
+      locked: false,
+    },
+    mass: {
+      value: "1",
+      valid: true,
+      unit: massUnits[5],
+      locked: true,
+    },
+    value: {
+      value: "1",
+      valid: true,
+      unit: currencyUnits[0],
+      locked: true,
+    },
+    valid: true,
+  });
   const [finalObject, setFinalObject] = useState<FinalObject>({
     material: {
       id: 0,
@@ -142,6 +195,8 @@ const Hero = () => {
   const [orbitTarget, setOrbitTarget] = useState<[number, number, number]>([
     0, 0, 0,
   ]);
+
+  const [randomList, setRandomList] = useState(randomObjects);
 
   const createObject = () => {
     const finalObj = {
@@ -201,10 +256,17 @@ const Hero = () => {
   };
 
   const pickRandomObject = () => {
-    const randomObj =
-      randomObjects[Math.floor(Math.random() * randomObjects.length)];
+    const randList = [...randomList];
+    const randID = Math.floor(Math.random() * randList.length);
+    const randomObj = randList.splice(randID, 1)[0];
 
     if (randomObj) setFinalObject(randomObj);
+
+    if (randList.length === 0) {
+      setRandomList(randomObjects);
+    } else {
+      setRandomList(randList);
+    }
     resetCam();
   };
 
