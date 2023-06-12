@@ -23,6 +23,7 @@ import {
   capitalizeFirstLetter,
   formatNumber,
   valueToNum,
+  DEFAULT_FORM,
 } from "../utils/calculator";
 // Types
 import { ComparisonObject } from "../types/data/types";
@@ -105,61 +106,7 @@ export const FormDataContext = createContext<Context>({
 
 const Hero = () => {
   const [formOpen, setFormOpen] = useState<boolean>(false);
-  const [formObject, dispatch] = useReducer(reducer, {
-    material: {
-      id: 0,
-      name: "",
-      density: 1,
-      price: 1,
-      color: "",
-      metalness: 0,
-      roughness: 1,
-      opacity: 1,
-    },
-    shape: {
-      id: 0,
-      name: "cube",
-    },
-    density: {
-      value: "1",
-      valid: true,
-    },
-    price: {
-      value: "1",
-      valid: true,
-    },
-    x: {
-      value: "1",
-      valid: true,
-      unit: lengthUnits[5],
-      locked: false,
-    },
-    y: {
-      value: "1",
-      valid: true,
-      unit: lengthUnits[5],
-      locked: false,
-    },
-    z: {
-      value: "1",
-      valid: true,
-      unit: lengthUnits[5],
-      locked: false,
-    },
-    mass: {
-      value: "1",
-      valid: true,
-      unit: massUnits[5],
-      locked: true,
-    },
-    value: {
-      value: "1",
-      valid: true,
-      unit: currencyUnits[0],
-      locked: true,
-    },
-    valid: false,
-  });
+  const [formObject, dispatch] = useReducer(reducer, DEFAULT_FORM);
   const [finalObject, setFinalObject] = useState<FinalObject>({
     material: {
       id: 0,
@@ -218,13 +165,26 @@ const Hero = () => {
       description: "",
     };
 
-    finalObj.description = `${capitalizeFirstLetter(finalObj.material.name)} ${
-      finalObj.shape
-    } with a mass of ${formatNumber(finalObj.mass.value)} ${
-      finalObj.mass.unit.shorthand
-    }, worth $${
-      finalObj.value.value === 0 ? "???" : formatNumber(finalObj.value.value)
-    }.`;
+    let desc = ``;
+
+    if (finalObj.material.name !== "") {
+      desc = desc.concat(capitalizeFirstLetter(finalObj.material.name));
+    } else {
+      desc = desc.concat("Unknown");
+    }
+    desc = desc.concat(` ${finalObj.shape}`);
+    desc = desc.concat(
+      ` with a mass of ${formatNumber(finalObj.mass.value)} ${
+        finalObj.mass.unit.shorthand
+      }`
+    );
+    if (finalObj.value.value !== 0) {
+      desc = desc.concat(` worth $${formatNumber(finalObj.value.value)}.`);
+    } else {
+      desc = desc.concat(`.`);
+    }
+
+    finalObj.description = desc;
 
     setFinalObject(finalObj);
     dispatch({

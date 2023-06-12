@@ -1,11 +1,71 @@
 /* eslint-disable prefer-const */
 import { FormObject } from "../types/components/types";
+// Data
+import lengthUnits from "../assets/data/length_units.json";
+import massUnits from "../assets/data/mass_units.json";
+import currencyUnits from "../assets/data/currency_units.json";
 
-export let MIN_LENGTH = 1e-10;
-export let MAX_LENGTH = 2e10;
+export const DEFAULT_FORM = {
+  material: {
+    id: 0,
+    name: "",
+    density: 1,
+    price: 1,
+    color: "#a020f0",
+    metalness: 1,
+    roughness: 0.1,
+    opacity: 1,
+  },
+  shape: {
+    id: 0,
+    name: "cube",
+  },
+  density: {
+    value: "1",
+    valid: true,
+  },
+  price: {
+    value: "1",
+    valid: true,
+  },
+  x: {
+    value: "1",
+    valid: true,
+    unit: lengthUnits[5],
+    locked: false,
+  },
+  y: {
+    value: "1",
+    valid: true,
+    unit: lengthUnits[5],
+    locked: false,
+  },
+  z: {
+    value: "1",
+    valid: true,
+    unit: lengthUnits[5],
+    locked: false,
+  },
+  mass: {
+    value: "1",
+    valid: true,
+    unit: massUnits[5],
+    locked: true,
+  },
+  value: {
+    value: "1",
+    valid: true,
+    unit: currencyUnits[0],
+    locked: true,
+  },
+  valid: true,
+};
+
+export const MIN_LENGTH = 1e-10;
+export const MAX_LENGTH = 2e10;
 
 let DENSITY_NORMAL = 1;
-let MULTIPLIERS = [
+const MULTIPLIERS = [
   "million",
   "billion",
   "trillion",
@@ -17,51 +77,6 @@ let MULTIPLIERS = [
   "nonillion",
   "decillion",
 ];
-
-export const valueToNum = (val: string): number => {
-  let splitNums = val.split(" ");
-  let numMultiplier = 1;
-  let startNum = splitNums[0];
-  let splitEnd = splitNums[splitNums.length - 1];
-
-  if (splitNums.length === 2 && MULTIPLIERS.includes(splitEnd)) {
-    switch (splitEnd) {
-      case "million":
-        numMultiplier = 1e6;
-        break;
-      case "billion":
-        numMultiplier = 1e9;
-        break;
-      case "trillion":
-        numMultiplier = 1e12;
-        break;
-      case "quadrillion":
-        numMultiplier = 1e15;
-        break;
-      case "quintillion":
-        numMultiplier = 1e18;
-        break;
-      case "sextillion":
-        numMultiplier = 1e21;
-        break;
-      case "septillion":
-        numMultiplier = 1e24;
-        break;
-      case "octillion":
-        numMultiplier = 1e27;
-        break;
-      case "nonillion":
-        numMultiplier = 1e30;
-        break;
-      case "decillion":
-        numMultiplier = 1e33;
-        break;
-    }
-    return +startNum * numMultiplier;
-  } else {
-    return +val;
-  }
-};
 
 const cubeFromVolume = (formObject: FormObject): FormObject => {
   if (!formObject.x.valid) return formObject;
@@ -381,7 +396,55 @@ const cylinderFromValue = (formObject: FormObject): FormObject => {
   return formObject;
 };
 
+export const valueToNum = (val: string): number => {
+  val = val.replace(/,/g, "");
+  let splitNums = val.split(" ");
+  let numMultiplier = 1;
+  let startNum = splitNums[0];
+  let splitEnd = splitNums[splitNums.length - 1];
+
+  if (splitNums.length === 2 && MULTIPLIERS.includes(splitEnd)) {
+    switch (splitEnd) {
+      case "million":
+        numMultiplier = 1e6;
+        break;
+      case "billion":
+        numMultiplier = 1e9;
+        break;
+      case "trillion":
+        numMultiplier = 1e12;
+        break;
+      case "quadrillion":
+        numMultiplier = 1e15;
+        break;
+      case "quintillion":
+        numMultiplier = 1e18;
+        break;
+      case "sextillion":
+        numMultiplier = 1e21;
+        break;
+      case "septillion":
+        numMultiplier = 1e24;
+        break;
+      case "octillion":
+        numMultiplier = 1e27;
+        break;
+      case "nonillion":
+        numMultiplier = 1e30;
+        break;
+      case "decillion":
+        numMultiplier = 1e33;
+        break;
+    }
+    return +startNum * numMultiplier;
+  } else {
+    return +val;
+  }
+};
+
 export const isInRangeFinite = (num: string): boolean => {
+  num = num.replace(/,/g, "");
+
   if (valueToNum(num) > 0 && isFinite(valueToNum(num))) {
     return true;
   } else return false;
@@ -404,6 +467,8 @@ export const isValidNumber = (num: string): boolean => {
   let splitNums = num.split(" ");
   let startNum = splitNums[0];
 
+  startNum = startNum.replace(/,/g, "");
+
   if (+startNum >= 0 && !isNaN(+startNum)) {
     if (splitNums.length === 1) {
       return true;
@@ -425,6 +490,12 @@ export const formatNumber = (num: number): string => {
 
   if (num === 0) {
     strNum = "0";
+  } else if (num < 0.01) {
+    strNum = num.toExponential(2);
+  } else if (num >= 0.01 && num <= 999999) {
+    strNum = Intl.NumberFormat("us-US", { maximumFractionDigits: 2 })
+      .format(num)
+      .toString();
   } else if (num > 999999) {
     if (num >= 1e36) {
       strNum = num.toExponential(3);
@@ -453,8 +524,6 @@ export const formatNumber = (num: number): string => {
     } else if (num >= 1e6) {
       strNum = (Math.round((num / 1e6) * 100) / 100).toString() + " million";
     }
-  } else if (num < 0.01) {
-    strNum = num.toExponential(2);
   } else {
     strNum = (Math.round(num * 100) / 100).toString();
   }
