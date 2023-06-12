@@ -10,8 +10,6 @@ import {
 } from "./calculator";
 // Data
 import lengthUnits from "../assets/data/length_units.json";
-import massUnits from "../assets/data/mass_units.json";
-import currencyUnits from "../assets/data/currency_units.json";
 // Types
 import { FormObject, Action } from "../types/components/types";
 
