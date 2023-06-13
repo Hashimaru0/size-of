@@ -1,6 +1,6 @@
 import { useState, useEffect, useReducer, createContext } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Environment } from "@react-three/drei";
+import { Environment, useProgress } from "@react-three/drei";
 // Components
 import UI from "./UI";
 import Form from "./form/Form";
@@ -27,8 +27,10 @@ import {
 // Types
 import { ComparisonObject } from "../types/data/types";
 import { FinalObject, Context } from "../types/components/types";
-import LevaUI from "./LevaUI";
+//import LevaUI from "./LevaUI";
 // Assets
+import logoIcon from "/icon.svg";
+
 import skyNX from "../assets/cubemaps/sky/nx.jpg";
 import skyNY from "../assets/cubemaps/sky/ny.jpg";
 import skyNZ from "../assets/cubemaps/sky/nz.jpg";
@@ -104,6 +106,8 @@ export const FormDataContext = createContext<Context>({
 });
 
 const Hero = () => {
+  const { progress } = useProgress();
+
   const [formOpen, setFormOpen] = useState<boolean>(false);
   const [formObject, dispatch] = useReducer(reducer, {
     material: {
@@ -317,51 +321,62 @@ const Hero = () => {
 
   return (
     <div className="w-screen h-screen">
-      <UI
-        finalObject={finalObject}
-        setFormOpen={setFormOpen}
-        resetCam={resetCam}
-        pickRandomObject={pickRandomObject}
-      />
-      <LevaUI setFinalObject={setFinalObject} />
-      <FormDataContext.Provider
-        value={{
-          formObject,
-          dispatch,
-        }}
-      >
-        {formOpen && (
-          <Form setFormOpen={setFormOpen} createObject={createObject} />
-        )}
-      </FormDataContext.Provider>
-      <Canvas camera={{ fov: 60, position: [0, 0, 10] }} shadows>
-        <CameraReact cameraPos={cameraPos} />
-        <Controls target={orbitTarget} />
-        <Environment
-          files={
-            comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
-              ? [skyPX, skyNX, skyPY, skyNY, skyPZ, skyNZ]
-              : [galaxyPX, galaxyNX, galaxyPY, galaxyNY, galaxyPZ, galaxyNZ]
-          }
-          background={
-            comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
-              ? false
-              : true
-          }
-        />
-        {comparisonObject.name !== "Earth" &&
-        comparisonObject.name !== "Sun" ? (
-          <NormalLighting />
-        ) : (
-          <SpaceLighting />
-        )}
-        <Comparator
+      {/* <LevaUI setFinalObject={setFinalObject} /> */}
+      {progress < 100 && (
+        <div className="absolute flex justify-center items-center text-[10rem] w-full h-full bg-[#2f3440] z-50">
+          <img src={logoIcon} className="loading-logo" alt="logo" />
+        </div>
+      )}
+
+      <>
+        <UI
           finalObject={finalObject}
-          comparisonObject={comparisonObject}
+          setFormOpen={setFormOpen}
+          resetCam={resetCam}
+          pickRandomObject={pickRandomObject}
         />
-        {comparisonObject.name !== "Earth" &&
-          comparisonObject.name !== "Sun" && <Floor />}
-      </Canvas>
+        <FormDataContext.Provider
+          value={{
+            formObject,
+            dispatch,
+          }}
+        >
+          {formOpen && (
+            <Form setFormOpen={setFormOpen} createObject={createObject} />
+          )}
+        </FormDataContext.Provider>
+
+        <Canvas camera={{ fov: 60, position: [0, 0, 10] }} shadows>
+          <CameraReact cameraPos={cameraPos} />
+          <Controls target={orbitTarget} />
+          <Environment
+            files={
+              comparisonObject.name !== "Earth" &&
+              comparisonObject.name !== "Sun"
+                ? [skyPX, skyNX, skyPY, skyNY, skyPZ, skyNZ]
+                : [galaxyPX, galaxyNX, galaxyPY, galaxyNY, galaxyPZ, galaxyNZ]
+            }
+            background={
+              comparisonObject.name !== "Earth" &&
+              comparisonObject.name !== "Sun"
+                ? false
+                : true
+            }
+          />
+          {comparisonObject.name !== "Earth" &&
+          comparisonObject.name !== "Sun" ? (
+            <NormalLighting />
+          ) : (
+            <SpaceLighting />
+          )}
+          <Comparator
+            finalObject={finalObject}
+            comparisonObject={comparisonObject}
+          />
+          {comparisonObject.name !== "Earth" &&
+            comparisonObject.name !== "Sun" && <Floor />}
+        </Canvas>
+      </>
     </div>
   );
 };
