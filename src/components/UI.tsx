@@ -45,12 +45,20 @@ const ControlButtonGroup = ({
 const SocialsButtonGroup = () => {
   return (
     <div className="fixed bottom-5 right-5 flex justify-end w-[40%] sm:w-auto sm:static sm:mt-[1rem]">
-      <button className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tl-lg rounded-bl-lg bg-ui-300">
+      <a
+        className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tl-lg rounded-bl-lg bg-ui-300"
+        href="https://www.patreon.com/SizeOf"
+        target="_blank"
+      >
         <PatreonIcon />
-      </button>
-      <button className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-y-[2px] border-ui-100 bg-ui-300">
+      </a>
+      <a
+        className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-y-[2px] border-ui-100 bg-ui-300"
+        href="https://www.buymeacoffee.com/sizeof"
+        target="_blank"
+      >
         <CoffeeIcon />
-      </button>
+      </a>
       <button className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tr-lg rounded-br-lg bg-ui-300">
         <DiscordIcon />
       </button>
