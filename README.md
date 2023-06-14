@@ -27,8 +27,9 @@ The input field is a string that gets converted to a number so instead of 100000
 Unlocking some values will lock the others and those locked ones will be calculated automatically.
 The range of a created object size must be between **0.1 nanometers (1e-10 meters)** and **~52 lunar distances (2e10 meters)**
 
-#### Description at the top
+#### Description box at the top
 
 The description gets automatically generated when an object is created, but you can edit the text however you want.
 
 ## Have fun!
+<a href="https://www.buymeacoffee.com/sizeof" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=sizeof&button_colour=5F7FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" /></a>
