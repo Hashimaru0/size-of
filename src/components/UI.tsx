@@ -5,7 +5,7 @@ import CenterCameraIcon from "./icons/CenterCameraIcon";
 import RandomIcon from "./icons/RandomIcon";
 import PatreonIcon from "./icons/PatreonIcon";
 import CoffeeIcon from "./icons/CoffeeIcon";
-import DiscordIcon from "./icons/DiscordIcon";
+import GitHubIcon from "./icons/GitHubIcon";
 // Types
 import { FinalObject } from "../types/components/types";
 
@@ -59,9 +59,13 @@ const SocialsButtonGroup = () => {
       >
         <CoffeeIcon />
       </a>
-      <button className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tr-lg rounded-br-lg bg-ui-300">
-        <DiscordIcon />
-      </button>
+      <a
+        className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tr-lg rounded-br-lg bg-ui-300"
+        href="https://github.com/hashimaru0"
+        target="_blank"
+      >
+        <GitHubIcon />
+      </a>
     </div>
   );
 };

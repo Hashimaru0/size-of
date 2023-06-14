@@ -327,56 +327,51 @@ const Hero = () => {
           <img src={logoIcon} className="loading-logo" alt="logo" />
         </div>
       )}
+      <UI
+        finalObject={finalObject}
+        setFormOpen={setFormOpen}
+        resetCam={resetCam}
+        pickRandomObject={pickRandomObject}
+      />
+      <FormDataContext.Provider
+        value={{
+          formObject,
+          dispatch,
+        }}
+      >
+        {formOpen && (
+          <Form setFormOpen={setFormOpen} createObject={createObject} />
+        )}
+      </FormDataContext.Provider>
 
-      <>
-        <UI
-          finalObject={finalObject}
-          setFormOpen={setFormOpen}
-          resetCam={resetCam}
-          pickRandomObject={pickRandomObject}
+      <Canvas camera={{ fov: 60, position: [0, 0, 10] }} shadows>
+        <CameraReact cameraPos={cameraPos} />
+        <Controls target={orbitTarget} />
+        <Environment
+          files={
+            comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
+              ? [skyPX, skyNX, skyPY, skyNY, skyPZ, skyNZ]
+              : [galaxyPX, galaxyNX, galaxyPY, galaxyNY, galaxyPZ, galaxyNZ]
+          }
+          background={
+            comparisonObject.name !== "Earth" && comparisonObject.name !== "Sun"
+              ? false
+              : true
+          }
         />
-        <FormDataContext.Provider
-          value={{
-            formObject,
-            dispatch,
-          }}
-        >
-          {formOpen && (
-            <Form setFormOpen={setFormOpen} createObject={createObject} />
-          )}
-        </FormDataContext.Provider>
-
-        <Canvas camera={{ fov: 60, position: [0, 0, 10] }} shadows>
-          <CameraReact cameraPos={cameraPos} />
-          <Controls target={orbitTarget} />
-          <Environment
-            files={
-              comparisonObject.name !== "Earth" &&
-              comparisonObject.name !== "Sun"
-                ? [skyPX, skyNX, skyPY, skyNY, skyPZ, skyNZ]
-                : [galaxyPX, galaxyNX, galaxyPY, galaxyNY, galaxyPZ, galaxyNZ]
-            }
-            background={
-              comparisonObject.name !== "Earth" &&
-              comparisonObject.name !== "Sun"
-                ? false
-                : true
-            }
-          />
-          {comparisonObject.name !== "Earth" &&
-          comparisonObject.name !== "Sun" ? (
-            <NormalLighting />
-          ) : (
-            <SpaceLighting />
-          )}
-          <Comparator
-            finalObject={finalObject}
-            comparisonObject={comparisonObject}
-          />
-          {comparisonObject.name !== "Earth" &&
-            comparisonObject.name !== "Sun" && <Floor />}
-        </Canvas>
-      </>
+        {comparisonObject.name !== "Earth" &&
+        comparisonObject.name !== "Sun" ? (
+          <NormalLighting />
+        ) : (
+          <SpaceLighting />
+        )}
+        <Comparator
+          finalObject={finalObject}
+          comparisonObject={comparisonObject}
+        />
+        {comparisonObject.name !== "Earth" &&
+          comparisonObject.name !== "Sun" && <Floor />}
+      </Canvas>
     </div>
   );
 };
