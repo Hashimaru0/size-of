@@ -61,7 +61,7 @@ const SocialsButtonGroup = () => {
       </a>
       <a
         className="flex justify-center items-center text-white text-shadow h-[2.5rem] w-[3.5rem] border-[2px] border-ui-100 rounded-tr-lg rounded-br-lg bg-ui-300"
-        href="https://github.com/hashimaru0"
+        href="https://github.com/Hashimaru0/size-of"
         target="_blank"
       >
         <GitHubIcon />
